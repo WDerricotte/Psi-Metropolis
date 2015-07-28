@@ -1,4 +1,5 @@
-# Psi-Metropolis
+![psi-metropolis](media/artworkthechase.pdf)
+=============
 
 #####Author: Wallace D. Derricotte
 #####Contact: wallace.derricotte@emory.edu
