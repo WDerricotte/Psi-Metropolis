@@ -1,4 +1,4 @@
-![psi-metropolis](media/artworkthechase.pdf)
+![Psi-Metropolis](media/artworkthechase.pdf)
 =============
 
 #####Author: Wallace D. Derricotte
