@@ -1,7 +1,7 @@
 ![Psi-Metropolis](media/artworkthechase.png)
 =============
 
-#####Author: Wallace D. Derricotte
+#####Code Author: Wallace D. Derricotte
 #####Contact: wallace.derricotte@emory.edu
 
 Psi-Metropolis is an implementation of Metropolis Monte-Carlo for the purpose of sampling different molecular configurations, written
