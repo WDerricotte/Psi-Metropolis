@@ -1,6 +1,9 @@
-->![Psi-Metropolis](media/artworkthechase.png)<-
+![Psi-Metropolis](media/artworkthechase.png)
 =============
 
+<p align="center">
+  <media/artworkthechase.png />
+</p>
 #####Code Author: Wallace D. Derricotte
 #####Contact: wallace.derricotte@emory.edu
 
