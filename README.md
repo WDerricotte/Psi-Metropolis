@@ -1,4 +1,4 @@
-![Psi-Metropolis](media/artworkthechase.png)
+->![Psi-Metropolis](media/artworkthechase.png)<-
 =============
 
 #####Code Author: Wallace D. Derricotte
