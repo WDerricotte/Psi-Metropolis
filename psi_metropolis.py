@@ -15,6 +15,7 @@ numpy_memory = 2
 
 hartree2eV = 27.2107
 
+
 def monte_carlo(mol, method, temperature, max_step, total_mc_moves):	
 	# Import MintsHelper
 	# mints = MintsHelper()
@@ -25,6 +26,7 @@ def monte_carlo(mol, method, temperature, max_step, total_mc_moves):
 	header(mc_output)
 	mc_output.close()
 
+	start = time.time()
 	# Calculate initial energy from given geometry
 	for mc_iteration in range(total_mc_moves):
 		psi4.set_active_molecule(mol)
@@ -109,3 +111,6 @@ def monte_carlo(mol, method, temperature, max_step, total_mc_moves):
                         mol = old_mol
                         trajectory_file.close()
                         mc_out.close()
+	end = time.time()
+	total_elasped = end - start
+	mc_out.write("Total Monte Carlo Time: %f" %(total_elapsed))

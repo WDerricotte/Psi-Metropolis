@@ -24,4 +24,39 @@ this trajectory for the next Monte Carlo run.
 
 5. If the Boltzmann factor (ratio of the two Boltzmann distributions) is greater than the random number then generated in step 4 then the geometry is accepted, otherwise we maintain the previous geometry. The user can specify a temperature, effectively changing the width of the Boltzmann distribution, allowing more geometries to be accepted. 
 
-6. After the geometry for the next run is chosen, we return to step 2. 
+6. After the geometry for the next run is chosen, we return to step 2.
+
+Example Input:
+```
+import time
+import psi4
+import numpy as np
+from psi_metropolis import monte_carlo
+import random as rand
+#from scipy import linalg as SLA
+np.set_printoptions(precision=5, linewidth=200, suppress=True)
+
+# Memory for Psi4 in GB
+memory 2 GB
+
+# Memory for numpy in GB
+numpy_memory = 2
+
+# Specify Initial geometry of molecule, you can specify initial geometry in any format,
+# however, everything is handled in xyz coordinates for the rest of the time
+molecule mol {
+O
+H 1 1.1
+H 1 1.1 2 104.5
+symmetry c1
+}
+
+set {
+basis cc-pVDZ
+scf_type pk
+e_convergence 1e-8
+}
+
+monte_carlo(mol, "rhf", 275.15, 0.05, 20)
+
+``` 
